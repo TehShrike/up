@@ -202,6 +202,12 @@ func (p *Platform) Domains() platform.Domains {
 	return NewDomains()
 }
 
+// Secrets implementation.
+func (p *Platform) Secrets(stage string) platform.Secrets {
+	// TODO: all regions
+	return runtime.NewSecrets(p.config.Name, stage, p.config.Regions[0])
+}
+
 // URL returns the stage url.
 func (p *Platform) URL(region, stage string) (string, error) {
 	s := session.New(aws.NewConfig().WithRegion(region))
