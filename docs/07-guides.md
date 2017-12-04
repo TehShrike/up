@@ -62,7 +62,7 @@ $ up version
 0.1.1-pro
 ```
 
-Note that AWS charges for your resource usage, and is not associated to Up Pro's subscription. Most small to medium applications will fit within AWS' free tier, however you should consult AWS' pricing documentation for details. The [Serverless Calc](http://serverlesscalc.com/) is a useful tool for estimating the API Gateway and Lambda charges.
+Note that AWS charges for your resource usage, and is not associated with Up Pro's subscription. Most small to medium applications will fit within AWS' free tier, however, you should consult AWS' pricing documentation for details. The [Serverless Calc](http://serverlesscalc.com/) is a useful tool for estimating the API Gateway and Lambda charges.
 
 ## Inviting Team Members
 
@@ -100,7 +100,7 @@ $ up team login --email tobi@apex.sh --team apex
 
 Your co-worker will receive an email with installation instructions. There is currently no limit to the number of team members.
 
-For example if your email is "tj@apex.sh", and you invite "tobi@apex.sh", they will need to run the following to join your personal team.
+For example, if your email is "tj@apex.sh", and you invite "tobi@apex.sh", they will need to run the following to join your personal team.
 
 ```
 $ up account login --email tobi@apex.sh --team tj@apex.sh
@@ -118,7 +118,7 @@ This section guides you through taking a small application from development, to 
 
 ### Deploying
 
-First create `app.js` in an empty directory with the following Node.js app. Note that it must listen on __PORT__ which is passed by Up.
+First, create `app.js` in an empty directory with the following Node.js app. Note that it must listen on __PORT__ which is passed by Up.
 
 ```js
 const http = require('http')
@@ -129,7 +129,7 @@ http.createServer((req, res) => {
 }).listen(PORT)
 ```
 
-Next you should give your application a name and start configuring. The `profile` name should correspond with the name in `~/.aws/credentials` so that Up knows which AWS account to deploy to, and which credentials to use.
+Next, you should give your application a name and start configuring. The `profile` name should correspond to the name in `~/.aws/credentials` so that Up knows which AWS account to deploy to, and which credentials to use.
 
 ```json
 {
@@ -359,7 +359,7 @@ Save those four values in your registrar's interface, and you should be good to 
 
 If you manage DNS with a third-party such as Cloudflare, and wish to use Up only for deployment you will need to manually edit or add DNS records.
 
-For example if your domain `sloths.com` is managed by Cloudflare and you'd like point `api.sloths.com` to your app, you will need to create a `CNAME` for `api.sloths.com` pointing to the `endpoint` for the stage you'd like to map. Use `up stack` after your app is deployed as shown here to obtain this information.
+For example, if your domain `sloths.com` is managed by Cloudflare and you'd like point `api.sloths.com` to your app, you will need to create a `CNAME` for `api.sloths.com` pointing to the `endpoint` for the stage you'd like to map. Use `up stack` after your app is deployed as shown here to obtain this information.
 
 ```
 $ up stack
@@ -457,7 +457,7 @@ If you're on Up Pro you'll need to upgrade to install the Pro binary:
 $ up upgrade
 ```
 
-After that all you need to do is deploy to your desired stage!
+After that, all you need to do is deploy to your desired stage!
 
 ```
 $ up deploy production
@@ -620,7 +620,7 @@ status >= 200 status < 300
 
 ### Stages
 
-Currently all development, staging, and production logs are all stored in the same location, however you may filter to find exactly what you need.
+Currently all development, staging, and production logs are all stored in the same location, however, you may filter to find exactly what you need.
 
 The keywords `production`, `staging`, and `development` expand to:
 
