@@ -739,7 +739,6 @@ $ up team members add asya@example.com
 
 Manage encrypted environment variables. Environment variables are scoped to all stages by default, with stage-level overrides. The `up env` command is available in the Pro plan.
 
-
 ```
 Usage:
 
@@ -759,6 +758,8 @@ Subcommands:
   env add              Add a variable.
   env rm               Remove a variable.
 ```
+
+Here are some examples:
 
 ```
 $ up env add DB_NAME users
