@@ -77,6 +77,9 @@ type Interface interface {
 	// region(s) configured by the user.
 	Deploy(stage string) error
 
+	// Rollback to the given version.
+	Rollback(region, stage, version string) error
+
 	// Logs returns an interface for working
 	// with logging data.
 	Logs(region, query string) Logs
