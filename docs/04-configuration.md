@@ -186,7 +186,7 @@ The following environment variables are provided by Up:
 - `PORT` – port number such as "3000"
 - `UP_STAGE` – stage name such as "development" or "production"
 
-Up Pro offers encrypted environment variables via the [up env](https://up.docs.apex.sh/#commands.env) sub-command.
+Up Pro offers encrypted environment variables via the [up env](#commands.env) sub-command.
 
 ## Header Injection
 
