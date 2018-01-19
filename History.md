@@ -1,4 +1,10 @@
 
+v0.4.7-pro / 2018-01-19
+=======================
+
+  * add rollback support
+  * fix upgrade deduplication due to version having -pro suffix
+
 v0.4.7 / 2018-01-19
 ===================
 
